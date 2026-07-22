@@ -1,0 +1,85 @@
+/* 画面中央配置・ベースレイアウト */
+body {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px;
+  background-color: #f8fafc;
+  color: #1e293b; /* (4)⑥ 視認性の高い配色 */
+  font-family: "M PLUS 2", sans-serif;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* (3)① h1とh2にそれぞれ異なる背景色と文字色を設定 */
+h1 {
+  background-color: #0f172a; /* 落ち着いたダークネイビー */
+  color: #f8fafc;            /* 白文字 */
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+
+h2 {
+  background-color: #e2e8f0; /* 薄いグレー */
+  color: #0f172a;            /* ダークネイビー文字 */
+  padding: 10px 14px;
+  border-left: 6px solid #2563eb; /* アクセントの青ライン */
+  font-size: 1.2rem;
+}
+
+/* (3)② imgタグに枠線(border)を設定 */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #94a3b8; /* 金属感を表現したスレートグレーの枠線 */
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+/* (3)③ aタグに transition と :hover スタイルを設定 */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  /* アニメーション処理を追加 */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 2px 6px;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #2563eb; /* ホバー時に背景と文字色を反転 */
+  border-radius: 4px;
+}
+
+/* (3)④ olに任意の list-style-type を設定（デフォルト以外・識別可能） */
+ol {
+  list-style-type: hiragana; /* ひらがな順 (あ、い、う...) */
+  padding-left: 1.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* (3)⑤ 追加した details/summary タグの簡易装飾 */
+details {
+  background-color: #fff7ed; /* 注意喚起用の薄いオレンジ */
+  border: 1px solid #fdba74;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #c2410c;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <!-- (4)⑤ レスポンシブ対応のmetaタグ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- (4)④ 適切なタイトル -->
+  <title>機械加工の基礎：旋盤とフライス盤の比較と特徴</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;700&display=swap" />
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <!-- レスポンシブ幅調整用のcontainer -->
+  <div class="container">
+
+    <!-- (3)① h1タグ -->
+    <h1>工作機械の代表格：旋盤とフライス盤</h1>
+    
+    <p>
+      金属などの材料を削って目的の形状に加工する「切削工具」の中でも、中心的な役割を果たすのが旋盤（せんばん）とフライス盤です。ここでは両者の仕組みと違いについて解説します。
+    </p>
+
+    <!-- (4)② 1枚目の画像 -->
+    <img src="lathe.jpg" alt="金属部材を回転させて削る旋盤加工の様子" />
+
+    <!-- (3)① h2タグ -->
+    <h2>1. 旋盤とフライス盤の主な特徴</h2>
+    <p>どちらも金属を削る機械ですが、「どちらを回転させるか」が決定的に異なります。</p>
+
+    <!-- (4)③ 番号なし箇条書き (ul) -->
+    <ul>
+      <li><strong>旋盤 (Lathe):</strong> 材料（ワーク）を回転させ、固定した刃物を当てて削る</li>
+      <li><strong>フライス盤 (Milling machine):</strong> 刃物（工具）を回転させ、固定した材料に当てて削る</li>
+    </ul>
+
+    <h2>2. 代表的な加工工程</h2>
+    <p>それぞれの機械が得意とする主な加工方法は以下の通りです。</p>
+
+    <!-- (3)④ olタグ＋独自のlist-style-type (hiragana) -->
+    <ol>
+      <li>旋盤加工：外径削り、穴あけ、ねじ切り、端面加工など（円筒状の加工が得意）</li>
+      <li>フライス加工：平面削り、溝掘り、ポケット加工、側面削りなど（角物の加工が得意）</li>
+    </ol>
+
+    <!-- (3)⑤ サンプルにない追加タグ: <details> と <summary> -->
+    <details>
+      <summary>クリックして安全作業上の注意点を見る</summary>
+      <p>
+        高速で材料や工具が回転するため、作業時は保護メガネを着用し、巻き込まれ防止のため手袋の着用は厳禁（または指示に従う）です。
+      </p>
+    </details>
+
+    <!-- (4)② 2枚目の画像 -->
+    <img src="milling.jpg" alt="エンドミル工具が回転して金属板を平面削りするフライス加工" />
+
+    <h2>3. 関連リンク・さらに学ぶ</h2>
+    <p>工作機械の規格や基礎知識について深く知りたい方は、以下の外部サイトも参照してください。</p>
+
+    <!-- (4)① 2つ以上のリンク (aタグ) -->
+    <p>
+      * <a href="https://www.jmtba.or.jp/" target="_blank" rel="noopener">日本工作機械工業会 公式サイト</a><br />
+      * <a href="https://www.jisc.go.jp/" target="_blank" rel="noopener">日本産業規格（JIS）WEBサイト</a>
+    </p>
+
+  </div>
+</body>
+</html>
