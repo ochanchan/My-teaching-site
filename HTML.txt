@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <!-- (4)⑤ レスポンシブ対応のmetaタグ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- (4)④ 適切なタイトル -->
+  <title>定積分の基礎とMathJaxの活用法</title>
+
+  <!-- Google Fonts（任意追加） -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;700&display=swap" />
+  
+  <!-- MathJaxライブラリの読み込み -->
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <!-- レスポンシブ幅調整用のcontainer -->
+  <div class="container">
+
+    <!-- (3)① h1タグ -->
+    <h1>偶関数と奇関数の定積分解説</h1>
+    
+    <p>
+      このページでは、数学における「偶関数」と「奇関数」の定積分の性質と、それをWeb上で美しく表示する方法について解説します。
+    </p>
+
+    <!-- (4)② 1枚目の画像 -->
+    <img src="photo-01.jpg" alt="数学の計算ノートと電卓の画像" />
+
+    <!-- (3)① h2タグ -->
+    <h2>1. 偶関数と奇関数の定義</h2>
+    <p>それぞれの関数の基本定義は以下の通りです。</p>
+
+    <!-- (4)③ 番号なし箇条書き (ul) -->
+    <ul>
+      <li><strong>偶関数:</strong> $f(-x) = f(x)$ を満たす関数（例: $x^2, \cos x$）</li>
+      <li><strong>奇関数:</strong> $f(-x) = -f(x)$ を満たす関数（例: $x^3, \sin x$）</li>
+    </ul>
+
+    <h2>2. 定積分の計算公式</h2>
+    <p>区間 $[-a, a]$ における定積分は、対称性を利用して以下のように単純化できます。</p>
+
+    <!-- (3)④ olタグ＋独自のlist-style-type (hiragana) -->
+    <ol>
+      <li>偶関数の場合：$\int_{-a}^{a} f(x) dx = 2 \int_{0}^{a} f(x) dx$</li>
+      <li>奇関数の場合：$\int_{-a}^{a} f(x) dx = 0$</li>
+    </ol>
+
+    <!-- (3)⑤ サンプルにない追加タグ: <details> と <summary> -->
+    <details>
+      <summary>クリックして定積分の計算例を見る</summary>
+      <p>
+        例えば、$f(x) = x^3$ のとき、奇関数であるため $\int_{-2}^{2} x^3 dx = 0$ と即座に求まります。
+      </p>
+    </details>
+
+    <!-- (4)② 2枚目の画像 -->
+    <img src="photo-02.jpg" alt="グラフ描画のイメージ画像" />
+
+    <h2>3. 参考リンク・関連情報</h2>
+    <p>Web上で数式をきれいにレンダリングしたい場合は、以下の外部サイトやライブラリを参照してください。</p>
+
+    <!-- (4)① 2つ以上のリンク (aタグ) -->
+    <p>
+      * <a href="https://www.mathjax.org/" target="_blank" rel="noopener">MathJax 公式サイト</a><br />
+      * <a href="https://latex-project.org/" target="_blank" rel="noopener">LaTeX プロジェクト公式サイト</a>
+    </p>
+
+  </div>
+</body>
+</html>
+/* 画面中央配置・ベースレイアウト */
